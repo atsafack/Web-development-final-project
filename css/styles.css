@@ -1,0 +1,831 @@
+/*
+Author: Albert ATSAFACK
+Date: 11 24, 2024
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, ul, section, aside, figure, figcaption {
+margin: 0;
+padding: 0;
+border: 0;
+}
+
+html{
+    background: #7775C7 ;
+   /* background: #373684 ; */
+    /*opacity: 0.2;*/
+}
+
+h1, h2, h3, h4,h5, h6 {
+background: #C0CAF7 ;
+width: 95%;
+padding: 2px 1% 3px 1%;
+margin-left:2%;
+color: #373684;
+opacity: 0.9;
+border-radius: 3px;
+text-shadow: 3px 3px 8px #EDEDE8;
+box-shadow: 0px 0px 2px 1px #E5E9FC;
+font-family: Geneva, Verdana, sans-serif ;
+}
+
+h1{ font-size: 1.1em;}
+h2{ font-size: 1em;}
+h3{ font-size: 0.9em;}
+h4{ font-size: 0.8em;}
+h5{ font-size: 0.7em;}
+h6{ font-size: 0.6em;}
+
+
+/*Hide Horizontal navigation*/
+#menu-links{
+    display: none;
+}
+
+.mobile-nav ul li {
+text-align: center;
+font-size: 1.2em;
+}
+
+.mobile-nav a {
+color: #FFFFFF;
+text-decoration: none;
+padding: 1% 3%;
+display: block;
+background: #373684 ;
+border-top: 1px solid #E5E9FC;
+}
+
+.mobile-nav a:hover, .mobile-nav li:hover  {
+    color: #373684;
+    background: #E5E9FC;
+    transform: scale(1.2);
+    }
+
+
+.mobile-nav a.menu-icon {
+display: block;
+position: absolute;
+right: 0;
+top: 0;
+}
+.menu-icon div {
+height: 50px;
+width: 50px;
+background-color: #373684;
+}
+
+ /*Mobile Viewport: Style rule for header element */
+header{
+    background: #373684  url(../images/banner2.jpg) repeat-x;
+    font-family: "DM Serif Display", serif;
+    text-align: center;
+    color: #E5E9FC;
+    text-shadow: 0px 2px 6px #E5E9FC;
+    min-height: 40px;
+    opacity: 0.7;
+    padding: 1% 0%;
+}
+
+/*Mobile Viewport: Style rule for ruban element */
+#ruban{
+    display:none;
+    width: 100%;
+}
+
+.dm-serif-display-regular {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+
+  font-style: normal;
+}
+
+.dm-serif-display-regular-italic {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 5em;
+}
+
+ /*Mobile Viewport: Style rule for logo-box element */
+#logo-box img{
+    width: 25%;
+    display: none;
+    position: relative;
+    animation: movelogo 4s infinite;
+}
+
+/*Mobile Viewport: Style rule Keyframe animation for logo    */
+@keyframes movelogo {
+  from {transform: scale(1);    }
+  to {transform: scale(1.4);  }
+}
+
+/*Mobile Viewport: Style rule for title-box element */
+ #title-box {
+  position: relative;
+  animation: movetitle 4s infinite;
+}
+
+/*Mobile Viewport: Style rule Keyframe animation for title    */
+@keyframes movetitle {
+  from {transform: scale(0.1);    }
+  to {transform: scale(0.7);  }
+}
+
+
+
+
+  /*Viewport: Style rule for form element */
+form{
+    width:95%;
+    margin:0 auto 0 auto;
+}
+
+fieldset {
+    margin: 3% 1%;
+    border-radius: 5px;
+    border: 1px solid #C0CAF7 ;
+    box-shadow: 0px 0px 2px 2px #E5E9FC;
+    background: #C0CAF7 ;
+}
+
+
+fieldset span, table span, .location span{
+    padding: 0% 0% 0% 1%;
+    display: block;
+    margin: 0 0 1px 0;
+    background: #E5E9FC ;
+    border-radius: 5px;
+
+}
+
+fieldset legend{
+    /*font-weight: bold;*/
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #C0CAF7 ;
+    box-shadow: 0px 0px 2px 2px #C0CAF7;
+    padding: 1% 5%;
+    margin-top:2%;
+    background: #4645A8 ;
+    color:#C0CAF7;
+}
+
+fieldset label{
+    display: inline-block;
+    width: 35%;
+}
+
+fieldset textarea{
+    width: 100%;
+}
+
+fieldset select{
+    width: 40%;
+}
+
+.form-input{
+    width:  55%;
+    border-top: 3px  solid #8585CC;
+    background: #E5E9FC
+}
+
+
+/* Style button for all */
+.button{
+     display:inline-block;
+     padding:3% 5%;
+     color:#b7b7e1;
+     font-size:1em;
+     margin-top:5px;
+ }
+
+
+
+ /* Style button for all reset and submit bbutton*/
+#submit, #reset{
+     display:inline-block;
+     padding:1% 2%;
+     color:#4645A8;
+     font-size:1em;
+ }
+
+ /* Style button for all  reset and submit bbutton*/
+.submit{
+     margin-left:10% ;
+ }
+
+ /* Style button for all reset and submit bbutton */
+.reset{
+   margin-left:40% ;
+ }
+
+/* Style padding for input, select, label */
+input,select, label  {
+    padding: 1%;
+    font-size: 1em;
+}
+
+
+/*Mobile Viewport:Style rule for image caption for Home page */
+
+#grid-home-page {
+   background: #E5E9FC ;
+}
+
+#grid-home-page img{
+    transform: skewY(20deg);
+    width: 30%;
+}
+
+/*Mobile Viewport:Style rule for grid layout for about page. */
+#grid-about{
+    display: grid;
+    grid-gap: 10px;
+}
+
+#grid-about .education{
+    display: grid;
+    background: #C0CAF7;
+    padding: 1% 0%;
+    grid-gap: 5px;
+    margin: 1% 0;
+    border-radius: 5px;
+    border: 2px solid #E5E9FC;
+    box-shadow: 0px 0px 5px 0px #E5E9FC  ;
+}
+
+
+
+/*Mobile Viewport:Style rule for work history page. */
+
+#grid-history{
+    width: 100%;
+}
+
+#grid-history .big-column, #grid-history .small-column{
+    display: grid;
+    grid-template-columns:auto;
+    background: #8195EF;
+}
+
+
+
+/*Mobile Viewport:Style rule for grid layout for archievements page. */
+#grid-archievements{
+    display: grid;
+    grid-template-columns:  auto;
+    grid-gap: 10px;
+
+}
+
+#grid-archievements article{
+    display: grid;
+    grid-template-columns:  auto;
+    grid-gap: 10px;
+    margin: 3%;
+}
+
+
+figure{
+    position: relative;
+    max-width: 275px;
+    margin: 2% auto;
+    border: 5px solid #E5E9FC ;
+    box-shadow: 0px 0px 5px 10px #E5E9FC;
+    border-radius: 5px;
+}
+
+figcaption{
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    width: 100%;
+    max-height: 30px;
+    padding: 3% 0;
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1em;
+    background: #031354 ;
+    opacity: 0.7;
+
+}
+
+/*Mobile Viewport:Style rule for figure image  */
+figure img{
+    max-width: 100%;
+    background: #E5E9FC ;
+}
+
+
+
+/*Mobile Viewport: Style rules to hidden horizontal nav area.*/
+#hmenu{
+    display: none;
+}
+
+/* Style rules for navigation area */
+nav#hmenu  {
+
+}
+
+
+nav#hmenu ul {
+list-style-type: none;
+text-align: center;
+padding: 2px 0 ;
+}
+
+nav#hmenu li {
+display: block;
+font-size: 1.2em;
+border-radius: 5px 5px 0px 0px;
+background: #4645A8;
+box-shadow: 0px -5px  1px 0px #E5E9FC;
+margin-left: 1px;
+}
+
+nav#hmenu li a {
+display: block;
+text-align: center;
+padding: 0.3em 0.8em;
+color: #C0CAF7;
+text-decoration: none;
+}
+
+nav#hmenu li a:hover, nav#hmenu li a:active, nav#hmenu li:active, nav#hmenu li:hover{
+color:#4645A8;
+background:#e5e9fc;
+border-radius: 5px 5px 0px 0px;
+box-shadow: 0px -5px  0px 1px #373684;
+}
+
+/*Mobile Viewport: Style rules for Ul list .*/
+.list-style li {
+list-style-image:url(../images/liststyle4.png);
+margin-left:10%;
+}
+
+/* Style rules for main content */
+main {
+padding: 0% 1%;
+overflow:auto;
+font-family: Verdana, Arial, sans-serif;
+}
+
+/*Mobile Viewport: Style rule for paragraph element font size */
+main p {
+    font-size:0.8em;
+    text-align: justify;
+    padding: 0 2%;
+    line-height: 1.5;
+}
+
+/*Mobile Viewport: Style rule for ul list element */
+main ul {
+    padding: 1%;
+    /* margin-left:  5%; */
+}
+
+main ul li{
+    list-style-type: none ;
+    padding: 0.8%;
+    font-size: 0.86em;
+    margin:  0.1% 0;
+    box-shadow: 1px 0px 2px 1px #F6F7FE ;
+    border-radius:5px;
+}
+
+/* Style rules for main vertical Menu */
+
+main .vmenu {
+   /*color: #fff; */
+   background:#373684 ;
+}
+
+main .vmenu ul li:hover{
+   transform: scale(1.1);
+   color: #fff;
+   background:#373684 ;
+}
+
+main .vmenu ul li a{
+    padding: 5% 10% 5% 5%;
+
+    text-decoration: none
+}
+
+main .vmenu ul li a:hover{
+   transform: scale(1.1);
+   color: #fff;
+}
+
+main video{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #E5E9FC ;
+    box-shadow: 0px 0px 5px 5px #E5E9FC;
+    border-radius: 5px;
+}
+
+ /*  Mobile Viewport: Style rules for footer content */
+    footer {
+    text-align: center;
+    font-size: 0.9em;
+    clear: left;
+    background: #C0CAF7 ;
+    height: 75px;
+    padding: 1%;
+    }
+
+/* Mobile Viewport: Style rules for footer area */
+   footer .copyright {
+        float: left;
+        width: 60%;
+    }
+
+ /* Mobile Viewport: Style rules for social media area */
+  footer .social-medias {
+        float: right;
+        width: 40%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 1%;
+    }
+
+  /* Mobile Viewport: Style rules for footer content for imgage for social media */
+    footer .social-medias img{
+       width: 100%;
+    }
+
+
+    footer a {
+    color: #4645a8;
+    text-decoration: none;
+    }
+
+    .email-link {
+    padding: 1% 5%;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+    }
+
+    .email-link a {
+    color: #4645a8;
+    text-decoration: none;
+    font-weight: bold;
+    }
+
+    .tel-link {
+    background-color: #373684;
+    padding: 1%;
+    margin: 1% auto;
+    width: 30%;
+    text-align: center;
+    border-radius: 5px;
+    }
+
+    .tel-link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    display: block;
+    }
+
+  /* The cellpadding attribute on the table element is obsolete. Use CSS instead. From line 84, column 13; to line 84, column 165
+  */
+
+  table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: auto;
+  background-color: #B4CBFD;
+   border-radius: 0 0 5px 5px ;
+}
+
+table caption{
+  font-family: arial, sans-serif;
+    font-size: 1.3em;
+ background-color: #E5E9FC;
+ padding: 1%;
+ border-radius: 5px 5px 0 0;
+}
+
+th {
+    text-align: center;
+    padding: 10px;
+    }
+
+td, th {
+  border-left: 3px solid #E5E9FC;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+table tfoot{
+ background-color: #E5E9FC;
+}
+
+.location{
+    width:100%; height:80%;
+    text-align: center;
+
+}
+
+.location iframe{
+    width:100%; height:100%;
+
+}
+
+ .location span{
+     padding: 2%;
+     margin-top: 5%;
+     font-weight: bold;
+
+ }
+
+
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 550px), print {
+/* Tablet Viewport:Style rules for header height */
+ header {
+   min-height: 140px;
+   font-size: 1em;
+}
+
+h1{ font-size: 1.3em;}
+h2{ font-size: 1.2em;}
+h3{ font-size: 1.1em;}
+h4{ font-size: 1em;}
+h5{ font-size: 0.9em;}
+h6{ font-size: 0.8em;}
+
+/* Tablet Viewport: Show ruban element, hide mobile class */
+#ruban{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 50px;
+}
+
+ /*Tablet Viewport: Style rule for logo-box element */
+#logo-box img{
+    display: none;
+    /*width:    25%; */
+}
+
+/*tablet Viewport: Style rule for title-box element */
+#title-box{
+    display: block;
+    font-size:1.3em;
+}
+
+/* tablet Viewport: style rule to hide mobile nav rule for Hamburger*/
+.mobile {
+display: none;
+}
+
+.mobile-nav{
+    display: none;
+}
+
+/*tablet Viewport: Style rules to display horizontal nav area.*/
+#hmenu{
+    display: block;
+}
+
+/*Tablet Viewport: Style rules for nav area.  */
+ nav#hmenu li{
+   /*  border-top: none;*/
+     display: inline-block;
+     font-size: 1.1em;
+     }
+
+     nav#hmenu li:last-child{
+     border-right: none;
+     }
+
+     nav#hmenu li a{
+         padding: 0.2em 0.8em;
+     }
+
+         nav#hmenu li a{
+        padding: 0.3em 0.8em;
+    }
+
+/*Tablet Viewport: Style rule for paragraph element font size */
+main p {
+    font-size:0.9em;
+}
+
+/*tablet Viewport:Style rule for grid layout for home page. */
+#grid-home-page{
+    display: grid;
+    grid-template-columns:25% auto;
+    grid-gap: 10px;
+}
+
+/*tablet Viewport:Style rule for grid layout for about page. */
+#grid-about{
+    grid-template-columns:  auto 40%;
+}
+
+#grid-about .education{
+    grid-template-columns:  auto;
+}
+
+#grid-about fieldset.detail {
+    margin:5% 1%;
+}
+
+/*tablet Viewport:Style rule for grid layout for archievements page. */
+#grid-archievements{
+    display: grid;
+    grid-template-columns:  auto;
+    grid-gap: 10px;
+
+}
+
+#grid-archievements article{
+    display: grid;
+    grid-template-columns:  auto auto;
+    grid-gap: 10px;
+    margin: 3%;
+}
+
+/*tablet Viewport:Style rule for work history page. */
+#grid-history .big-column{
+    display: grid;
+    grid-template-columns: auto;
+ }
+
+ #grid-history .small-column{
+    display: grid;
+    grid-template-columns: 30% auto;
+ }
+
+#grid-history fieldset.detail{
+    margin:5% 1%;
+}
+
+/*tablet Viewport:Style rule for image grid main service page. */
+#main-services{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap:5px;
+}
+
+ /* Tablet Viewport: Style rules for footer area */
+    footer  {
+                height: 60px;
+    }
+
+    /* Tablet Viewport: Style rules for copyright area */
+    footer .copyright {
+                width: 70%;
+    }
+
+    /* Tablet Viewport: Style rules for social media area */
+    footer .social-medias {
+        width: 30%;
+        grid-template-columns:  auto auto auto;
+    }
+
+
+}
+
+/*Media Query for Desktop Viewport. */
+@media screen and (min-width: 769px), print {
+
+/* Desktop Viewport:Style rules for header height */
+ header {
+   height: 300px;
+}
+
+h1{ font-size: 1.5em;}
+h2{ font-size: 1.4em;}
+h3{ font-size: 1.3em;}
+h4{ font-size: 1.2em;}
+h5{ font-size: 1.1em;}
+h6{ font-size: 1em;}
+
+/*Desktop Viewport:Style grid rule for ruban. */
+#ruban{
+    grid-template-columns: 20% auto auto;
+}
+
+ /*Desktop Viewport: Style rule for logo-box element */
+#logo-box img{
+    display: inline-block;
+    width:    30%;
+}
+
+
+/* desktop Viewport: Show title-box element on ruban for desktop*/
+#title-box{
+    display: block;
+    font-size:1.5em;
+}
+
+/*Desktop Viewport: Style rule for paragraph element font size */
+main p {
+    font-size:1em;
+}
+
+
+/*Deskstop Viewport:Style rule for nav horizontal navigation. */
+nav#hmenu ul li{
+     font-size: 1.4em;
+     }
+
+    nav#hmenu li a{
+        padding: 0.3em 0.8em;
+    }
+
+/*Deskstop Viewport:Style rule for grid layout for about page. */
+#grid-about{
+    grid-template-columns:  auto 25%;
+}
+
+#grid-about .education{
+    grid-template-columns:  40% auto;
+}
+
+/*Desktop Viewport:Style rule for work history page. */
+#grid-history .big-column{
+    display: grid;
+    grid-template-columns: auto 30%;
+ }
+
+ #grid-history .small-column{
+    display: grid;
+    grid-template-columns: 30% auto;
+ }
+
+
+/*tablet Viewport:Style rule for grid layout for archievements page. */
+#grid-archievements{
+    grid-template-columns:  auto 30%;
+}
+
+#grid-archievements article{
+    grid-template-columns:  auto auto;
+}
+
+/*Desktop Viewport:Style rule for grid layout. */
+.grid-article{
+    display: grid;
+    grid-template-columns: 20% auto auto;
+    grid-gap: 10px;
+}
+
+
+/*Desktop Viewport:Style rule for  grid main service page. */
+#main-services {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap:5px;
+}
+
+/*Desktop Viewport:Style rule for  grid form page. */
+#grid-form{
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-column: 1 / 2 span;
+}
+
+#grid-form iframe{
+    width:100%;
+    height:250px;
+}
+
+    /* Desktop Viewport: Style rules for copyright area */
+    footer .copyright {
+                width: 80%;
+    }
+
+    /* Desktop Viewport: Style rules for social media area */
+    footer .social-medias {
+        width: 20%;
+    }
+
+
+
+}
+
+/*Media Query for Print*/
+@media print{
+    body{
+        color:#fff;
+        background:#000;
+    }
+
+}
